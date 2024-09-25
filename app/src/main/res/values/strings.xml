@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CropDoc</string>
+    <string name="user_login">User Login</string>
+    <string name="welcome">Welcome</string>
+</resources>
