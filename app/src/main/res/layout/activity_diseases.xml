@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/img1">
+
+    <!-- Check Diseases Button -->
+    <Button
+        android:id="@+id/btn_check_now_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Diseases"
+        android:backgroundTint="@color/my_primary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Placeholder for results -->
+    <TextView
+        android:id="@+id/txt_disease_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disease check result will appear here"
+        android:textSize="20sp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@android:color/white" />
+</LinearLayout>

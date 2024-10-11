@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Button
-        Button letsGoButton = findViewById(R.id.button);
+        Button letsGoButton = findViewById(R.id.buttonGo);
         letsGoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // To Go to the Home Page
                 // Toast.makeText(MainActivity.this, "Let's Go Button Clicked!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, MainActivity_home_page.class);
+                Intent intent = new Intent(MainActivity.this, activity_login_signup_choice.class);
                 startActivity(intent);
             }
         });

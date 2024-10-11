@@ -20,11 +20,12 @@
         app:srcCompat="@drawable/peasant" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonGo"
         android:layout_width="206dp"
         android:layout_height="80dp"
         android:text="Let's go"
         android:textSize="30dp"
+        android:textColor="@color/white"
         android:fontFamily="arial"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

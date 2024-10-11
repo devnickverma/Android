@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,19 +14,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CropDoc"
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity_home_page"
-            android:exported="false" />
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity_diseases" android:exported="false" />
+        <activity android:name=".activity_upload_images" android:exported="false" />
+        <activity android:name=".activity_view_reports" android:exported="false" />
+        <activity android:name=".activity_check_diseases" android:exported="false" />
+        <activity android:name=".activity_signup" android:exported="false" />
+        <activity android:name=".activity_home" android:exported="false" />
+        <activity android:name=".activity_login" android:exported="false" />
+        <activity android:name=".activity_login_signup_choice" android:exported="false" />
     </application>
-
 </manifest>

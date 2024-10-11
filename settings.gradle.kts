@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "CropDoc"
 include(":app")
+include(":app")
  
